@@ -1,0 +1,35 @@
+*{
+	font-family: "Tomato";
+	font-size: 13px;
+}
+th{
+	color: white;
+	text-align: left;
+	background: #687291;
+	border-bottom: white solid 1px;
+}
+/*tr:nth-child(odd){
+	background: #eeeff2;
+}
+tr{	
+	background: #dfe1e7;
+}*/
+table{
+	width: 55%;
+}
+
+.oddrow{
+	background: #eeeff2;
+}
+.evenrow{
+	background: #dfe1e7;
+}
+td{
+	border-bottom: white solid 1px;
+}
+.center{
+	text-align: center;
+}
+tr.hidden {
+    display: none;
+}
