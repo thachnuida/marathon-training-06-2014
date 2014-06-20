@@ -1,0 +1,28 @@
+*{
+	font-family: "Tomato";
+	font-size: 13px;
+}
+a{
+display: inline-block;
+margin-left:10px;
+padding-top: 4px;
+padding-bottom: 4px;
+text-align: center;
+background-image: url(left.gif), url(right.gif), url(mid.gif);
+background-repeat: no-repeat, no-repeat, repeat-x;
+background-position: left top, right top, left top ; 
+text-decoration: none;
+color: black;
+}
+a:hover {color:#cc6600; cursor: pointer;}
+
+a:active{
+	color: black;
+	font-weight: bold;
+	background-image: url(left-selected.gif), url(right-selected.gif), url(mid-selected.gif);
+	background-repeat: no-repeat, no-repeat, repeat-x;
+	background-position: left top, right top, left top; 
+}
+body{
+	border-bottom: black solid 1px;
+}

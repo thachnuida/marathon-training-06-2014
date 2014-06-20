@@ -3,7 +3,6 @@
 	font-size: 13px;
 }
 tr.hidden td {
-    display: inline-block;
     border-top: black solid 2px;
 }
 table{
