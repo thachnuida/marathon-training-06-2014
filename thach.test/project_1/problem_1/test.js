@@ -1,1 +1,5 @@
-Hello all
+
+
+function one(){
+console.log('one');
+}
