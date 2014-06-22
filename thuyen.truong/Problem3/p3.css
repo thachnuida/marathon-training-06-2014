@@ -94,19 +94,64 @@ body{
 }
 #container .left-content{
 	float: left;
+
 	width: 63%;
 	border-right: 1px solid #999;
 }
 #container .left-content #left-child1{
-	width: 33%;
+	display: inline-block;
 	float: left;
+	width: 33%;
+	border-bottom: 2px solid #e2e2e2;
 	}
 #container .left-content #right-child1{
-	float: right;
 	width: 61%;
 	padding-left: 10px;
-	border-left: 1px solid #333;
+	border-left: 1px solid #e2e2e2;
 	margin-left: 10px;
+	padding-bottom: 15px;
+	display: inline-block;
+}
+#container .left-content #left-child2{
+	background: transparent url(doubleRule.gif) repeat-x left top;
+	margin-top: 1px;
+	clear: both;
+	width: 65%;
+	float: left;
+	
+}
+#container .left-content #right-child2{
+	background: transparent url(doubleRule.gif) repeat-x left top;
+	float: right;
+	width: 32%;
+	margin-top: 1px;
+	padding-right: 10px;
+	padding-left: 5px;
+}
+#container .general{
+	background: transparent url(doubleRule.gif) repeat-x left top;
+	width:100%;
+	clear: both;
+	padding-top:10px;
+}
+#container .general .story{
+	float: left;
+	width: 16%;
+}
+#container .general .story .first-story{
+	margin-bottom: 10px;
+}
+#container .left-content #left-child2 .title,  #container .general .title{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#container .left-content #right-child2 .story{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#container .left-content #right-child2 .story:first-child{
+	padding-bottom: 5px;
+	border-bottom: 1px solid #e2e2e2;
 }
 
 #container .left-content #right-child1 li{
@@ -122,13 +167,38 @@ display: inline;
 
 #container #left-child1 .story:not(.lastp){
 	padding-bottom: 10px;
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid #e2e2e2;
 }
+#container #right-child1 .article.lastp{
+	padding-bottom: 10px;
+	padding-top: 10px;
+	}
 #container .left-content .redline{
 	color: #a81817;
 	font-size: 10px;
 	font-weight: normal !important;
 }
+
+#container .left-content #left-child2 .showiconshare{
+	text-align: right;
+	margin-right: 10px;
+	margin-bottom: 15px;
+}
+
+#container .left-content #left-child2 .slidevideo li{
+	display: inline;
+	width: 22%;
+	height: inherit;
+	padding-right: 1%;
+	float: left;
+}
+#container .left-content #left-child2 .slidevideo img{
+	width: 100%;
+}
+#container .left-content #left-child2 .showiconshare li{
+	display: inline;
+}
+
 #container .right-content{
 	padding-right: 10px;
 	float: right;
@@ -147,13 +217,13 @@ display: inline;
 #container .right-content .article:not(.firstp):not(.lastp){
 	padding-top: 10px;
 	margin-top: 1px;
-	border-top: 1px solid #333;
-	border-bottom: 2px solid #333;
+	border-top: 1px solid #e2e2e2;
+	border-bottom: 2px solid #e2e2e2;
 }
 #container .left-content .article:not(.lastp){
 	padding-bottom: 10px;
 	padding-top: 10px;
-	border-bottom: 1px solid #333;
+	border-bottom: 1px solid #e2e2e2;
 }
 #container .right-content .article img.rspace{
 	position: absolute;
