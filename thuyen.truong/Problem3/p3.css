@@ -9,7 +9,9 @@ body{
 	width: 76%;
 	margin: 0 auto;
 	font-family: "nyt-franklin",arial,helvetica,sans-serif;
+	font-size: 13px;
 }
+
 
 #header li{
 	display: inline;
@@ -92,8 +94,40 @@ body{
 }
 #container .left-content{
 	float: left;
-	width: 64%;
-	border-left: 1px solid #999;
+	width: 63%;
+	border-right: 1px solid #999;
+}
+#container .left-content #left-child1{
+	width: 33%;
+	float: left;
+	}
+#container .left-content #right-child1{
+	float: right;
+	width: 61%;
+	padding-left: 10px;
+	border-left: 1px solid #333;
+	margin-left: 10px;
+}
+
+#container .left-content #right-child1 li{
+display: inline;
+	}
+#container .left-content #right-child1{
+	padding-right: 10px
+}
+#container .left-content .special-topic{
+	font-family: "nyt-karnak-display","nyt-karnak-display-130124";
+	border-bottom: 1px solid #00A859;
+}
+
+#container #left-child1 .story:not(.lastp){
+	padding-bottom: 10px;
+	border-bottom: 1px solid #000;
+}
+#container .left-content .redline{
+	color: #a81817;
+	font-size: 10px;
+	font-weight: normal !important;
 }
 #container .right-content{
 	padding-right: 10px;
@@ -109,11 +143,17 @@ body{
 	font-family: georgia,"times new roman",times,serif;
 	padding-bottom: 10px;
 }
+
 #container .right-content .article:not(.firstp):not(.lastp){
 	padding-top: 10px;
 	margin-top: 1px;
 	border-top: 1px solid #333;
 	border-bottom: 2px solid #333;
+}
+#container .left-content .article:not(.lastp){
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-bottom: 1px solid #333;
 }
 #container .right-content .article img.rspace{
 	position: absolute;
@@ -123,16 +163,17 @@ body{
 #container .right-content .article a{
 	color:#000;
 }
-#container .right-content .article .story{
+#container .right-content .article .story, #container .left-content .article .story
+{
 	display: inline-block;
 }
-#container .right-content .article .story.first{
+#container .right-content .article .story.first, #container .left-content .article .story.first{
 	padding-right: 10px;
 	float: left;
 	border-right: 1px solid #999;
 	width: 47%;
 }
-#container .right-content .article .story.second{
+#container .right-content .article .story.second, #container .left-content .article .story.second{
 	padding-left: 10px;
 	width:44%;
 }
@@ -140,9 +181,11 @@ body{
 	text-align: center;
 	font-weight: bold;
 }
-#container .right-content .article .linkBlue{
+#container .right-content .linkBlue, #container .left-content .linkBlue{
 	color:#326891;
 }
+
+
 #container .right-content .article .fixpic{
 	margin-bottom: -6px;
 	margin-right: 10px;
@@ -154,7 +197,8 @@ body{
 	font-weight: 600;
 	color: #000;
 }
-#container .right-content .article .story .first-story{
+
+#container .right-content .story .first-story, #container .left-content .story .first-story{
 	font-weight: 500;
 	font-size: 10px;
 	line-height: 11px;
@@ -162,17 +206,20 @@ body{
 	margin-bottom: 3px;
 	font-family: "nyt-franklin",arial,helvetica,sans-serif;
 }
-#container .right-content .article .story .artist{
+
+#container .right-content .story .artist, #container .left-content .story .artist{
 	font-size: 10px;
 	line-height: 12px;
 	color: #808080;
 	margin: 4px 0 2px 0;
 }
-#container .right-content .article .story .bullet a {
+
+
+#container .right-content .bullet a, #container .left-content .bullet a {
 	font-size: 10px;
 	font-weight: bold;
 }
-#container .right-content .article .story .bullet li:before{
+#container .right-content .bullet li:before, #container .left-content .bullet a:before{
 	content: "\2022";
 	font-size: 9px;
 	font-weight: bold;
@@ -181,6 +228,7 @@ body{
 #container .story.first.extend{
 	width: 53% !important;
 }
+
 
 #container .story.second.extend{
 	width: 40% !important;
@@ -229,7 +277,8 @@ body{
 	color: #3c8a37;
 	font-weight: 600;
 }
-#container .menu li{
+#container .right-content .article .sub-menu li
+{
 	display: inline;
 	padding-right: 10px;
 }
