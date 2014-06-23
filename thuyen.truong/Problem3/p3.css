@@ -3,7 +3,6 @@
 	padding: 0;
 	text-decoration: none;
 	list-style: none;
-
 }
 body{
 	padding-top: 10px;
@@ -13,24 +12,19 @@ body{
 	font-family: "nyt-franklin",arial,helvetica,sans-serif;
 	font-size: 13px;
 }
-
-
 #header li{
 	display: inline;
 }
-
 #header .header1{
 	overflow: hidden;
 	padding-bottom: 10px;
 }
-
 #header .header1 ul:first-child{
 	float: left;
 }
 #header .header1 ul:last-child{
 	float: right;
 }
-
 #header .blue-button{
 	color: #FFF;
 	padding-left: 10px;
@@ -72,15 +66,12 @@ body{
 	line-height: 1.5em;
 	font-family:"nyt-franklin",arial,helvetica,sans-serif;
 }
-
 #header ul#menu li{
 	font-size: 11px;
 	font-weight: bold;
 	padding: 4px;
 	margin: 0px 4px;
 }
-
-
 #header ul#menu li.activative{
 	cursor: pointer;
 	font-size: 10px;
@@ -104,7 +95,7 @@ body{
 	float: left;
 	width: 33%;
 	border-bottom: 2px solid #e2e2e2;
-	}
+}
 #container .left-content #right-child1{
 	width: 61%;
 	padding-left: 10px;
@@ -119,7 +110,6 @@ body{
 	clear: both;
 	width: 65%;
 	float: left;
-	
 }
 #container .left-content #right-child2{
 	background: transparent url(doubleRule.gif) repeat-x left top;
@@ -129,7 +119,6 @@ body{
 	padding-right: 10px;
 	padding-left: 5px;
 }
-
 #container .general{
 	background-image: url(doubleRule.gif), url(doubleRule.gif);
 	background-position: left top, left bottom;
@@ -162,7 +151,6 @@ body{
 #container .left-content.second .article:first-child{
 	border-top:0px !important;
 }
-
 #container .left-content.second .story{
 	width: 30%;
 	overflow: visible;
@@ -202,8 +190,8 @@ body{
 }
 
 #container .left-content #right-child1 li{
-display: inline;
-	}
+	display: inline;
+}
 #container .left-content #right-child1{
 	padding-right: 10px
 }
@@ -344,7 +332,6 @@ display: inline;
 #container .story.first.extend{
 	width: 53% !important;
 }
-
 
 #container .story.second.extend{
 	width: 40% !important;
