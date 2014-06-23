@@ -21,7 +21,7 @@ body{
 
 #header .header1{
 	overflow: hidden;
-	padding-bottom: 3px;
+	padding-bottom: 10px;
 }
 
 #header .header1 ul:first-child{
