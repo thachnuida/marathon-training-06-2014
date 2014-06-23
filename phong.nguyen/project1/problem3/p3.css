@@ -8,17 +8,63 @@
 ul { list-style: none; }
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, 
 address, big, cite, code, del, dfn, em,  img, ins, kbd, q,  samp, small, strike, strong, sub, sup, tt, var,
- b, i ,dl, dt, dd, ol, ul, li, fieldset, form, label, legend { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; text-decoration: none; }
-#header { border-bottom: 0px solid #DEDEDE; padding: 13px 0 13px; height: 180px;}
-#header .top  { float: left; display: block; height: 90px; width: 728px;margin-left: 110px; }
-#header .bot  { float: left; display: block;height: 96px; width: 950px;margin-top: 10px;}
-#header .bot .image1 { height:90px; width:120px; float: left;display: block;}
-#header .bot .image2 { height:42px; width:400px; margin-top: 46px; float: left;display: block;}
-#header .bot .image4 { height:90px; width:120px; float: right;display: block;margin-top: -51px}
-#header .bot  ul     { float: left; display:inline; margin-top:30px; margin-left: 100px; }
-#header .bot  ul li  { display: inline; font-size: 15px; color: green;}
-#header .bot .input {margin-left: 40px;margin-top: 10px; }
-.menu {height: 47px; width: 1286px; background-color: red; 
+ b, i ,dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+margin: 0; padding: 0; border: 0; outline: 0; 
+font-size: 100%; vertical-align: baseline; background: transparent;
+text-decoration: none; 
+}
+#header {
+  border-bottom: 0px solid #DEDEDE;
+  padding: 13px 0 13px; 
+  height: 195px;
+}
+#header .top  { 
+  float: left;
+  display: block; 
+  height: 90px; 
+  width: 728px;
+  margin-left: 110px; 
+}
+#header .bot  { 
+  float: left; 
+  display: block;
+  height: 96px; width: 950px;
+  margin-top: 10px;}
+#header .bot .image1 { 
+  height:90px; width:120px; 
+  float: left;
+  display: block;}
+#header .bot .image2 {
+ height:42px; width:400px; 
+ margin-top: 46px; 
+ float: left;
+ display: block;}
+#header .bot .image4 {
+ height:90px; 
+ width:120px; 
+ float: right;
+ display: block;
+ margin-top: -51px;
+}
+#header .bot ul { 
+  float: left; 
+  display:inline; 
+  margin-top:30px; 
+  margin-left: 100px; 
+}
+#header .bot ul li  { 
+  display: inline; 
+  font-size: 15px; 
+  color: green;
+}
+#header .bot .input {
+  margin-left: 40px;
+  margin-top: 10px; 
+}
+.menu {
+  height: 47px; 
+  width: 1286px; 
+  background-color: red; 
   min-height: 30px;
   background-color: #3e5b84 !important;
   background-image: (top, #5278ae, #213046);
@@ -28,95 +74,555 @@ address, big, cite, code, del, dfn, em,  img, ins, kbd, q,  samp, small, strike,
   background-image: linear-gradient(to bottom, #5278ae, #213046) ;
   background-repeat: repeat-x ;}
 
-.menu ul {height: 47px; width: 950px;margin-left: 170px; display: block; }
-.menu ul li { display: inline;padding: 14px; color:#f9f9f9; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-size:16px; line-height:36pt;text-decoration:none;}
+.menu ul {
+  height: 47px;
+   width: 950px;
+   margin-left: 170px; 
+   display: block;
+}
+.menu ul li { 
+  display: inline;
+  padding: 14px; 
+  color:#f9f9f9; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; 
+  font-size:16px; 
+  line-height:36pt;
+  text-decoration:none;
+}
 .menu ul li:hover{
 	background-color: white;
 	color: #39547a;
 }
-.sub {height: 47px; width: 1286px; display: block;float: left; border-bottom: 2px solid gray; border-spacing: 2px}
-.sub ul {height: 47px; width: 950px;margin-left: 170px; display: block; }
-.sub ul li { display: inline; padding: 6px;color: #5278AE; font-family:"Helvetica Neue";font-size:15px; line-height:36pt;text-decoration:none;font: bold;}
-.sub ul a { display: inline; color: #5278AE; font-family:"Helvetica Neue";font-size:15px; line-height:36pt;text-decoration:none;font: bold;}
-.sub ul li.imp  {color:#39547a;font-family: "Trebuchet MS", "Merriweather", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 18px;}
-.sub ul li.imp2 {color:maroon;}
-.sub ul a.imp2 {color:maroon;}
+.sub {
+  height: 47px; 
+  width: 1286px; 
+  display: block;
+  float: left;
+   border-bottom: 2px solid gray;
+  border-spacing: 2px;
+}
+.sub ul {
+  height: 47px;
+   width: 950px;
+   margin-left: 170px; 
+   display: block; 
+}
+.sub ul li { 
+  display: inline;
+   padding: 6px;
+   color: #5278AE; 
+   font-family:"Helvetica Neue";
+   font-size:15px; 
+   line-height:36pt;
+   text-decoration:none;
+   font-weight: bold;
+ }
+.sub ul a { 
+  display: inline; 
+  color: #5278AE;
+   font-family:"Helvetica Neue";
+   font-size:15px; 
+   line-height:36pt;
+   text-decoration:none;
+   font-weight: bold;
+}
+.sub ul li.imp  {
+  color:#39547a;
+  font-family: "Trebuchet MS", "Merriweather", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  font-size: 18px;
+}
+.sub ul li.imp2 {
+  color:maroon;
+}
+.sub ul a.imp2 {
+  color:maroon;
+}
 .sub ul li:hover{
 	text-decoration: underline;
 }
-#content{ border-bottom: 0px solid #DEDEDE; padding: 13px 0 13px;}
-#content .top {float: left;display: block; height: 1623px;width: 665px;}
-#content .top .left {float: left;display: block; height: 1073px;width: 150px;}
-#content .top .left .topcontent { float: left;display:inline; height: 30px; width: 150px;margin-top: 15px;}
-#content .top .left h3 { color: #39547A;font: bold 20px "Oxygen", "Trebuchet MS"; margin: auto;text-transform: uppercase;}
-
-#content .top .left .midcontent {float: left;display: inline; margin-top: 3px;}
-#content .top .left .midcontent h2{ color:#333;font: bold 17px "Oxygen", "Trebuchet MS"; margin-top: 8px;}
-#content .top .left .midcontent a { color:#333;font: bold 17px "Oxygen", "Trebuchet MS"; margin-top: 8px;}
-#content .top .left .midcontent select { height: 28px;line-height: 28px;;border: 1px solid #dddddd;
-background-color: #f9f9f9;padding: 4px 6px;margin-bottom: 11.326px;font-size: 14px;}
-#content .top .left .midcontent a.con{ color: #39547A;font: bold 20px "Oxygen", "Trebuchet MS"; margin: auto;text-transform: uppercase;}
-#content .top .left .midcontent h2.con{font: 20px "Oxygen", "Trebuchet MS"; margin: auto; font-size: 14px;}
-#content .top .left .midcontent a.detail{color: #5278ae;text-decoration: none;font: normal 14px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif;}
-
-a:hover{text-decoration: underline;}
-#content .top .left span {float:left;font-size: 12px;color: #808080;font: normal 10px / 16.989px "Helvetica Neue", Helvetica, Arial, sans-serif;}
-
-#content .top .mid{ float: left;display: block; height: 1073px;width: 485px; margin-left: 20px;}
-#content .top .mid .topcontent{ display: block; float: left; height: 990px; width: 485px;border-bottom: 4px solid gray;}
-#content .top .mid .topcontent .subcontent {display: block; float: left; width: 485px;}
-#content .top .mid .topcontent .subcontent h1{display: block; float: left;color: #333;font: bold 40px "Merriweather", Georgia, "Times New Roman", Times, serif;}
-#content .top .mid .topcontent .subcontent a{display: block; float: left;color: #333;font: bold 40px "Merriweather", Georgia, "Times New Roman", Times, serif;}
-#content .top .mid .topcontent .subcontent .img{display: block; float: left; width:485px;}
-#content .top .mid .topcontent .subcontent span{color: #666;font: normal 13px / 16.989px "Helvetica Neue", Helvetica, Arial, sans-serif;}
-#content .top .mid .topcontent .subcontent .con{float: left; display:block;font: bold 16px "Oxygen", "Trebuchet MS", "Merriweather", "Helvetica Neue", Helvetica, Arial, sans-serif ; color: #39547A;margin-top: 20px;
-width: 485px;}
-#content .top .mid .topcontent .subcontent .otheritem{width: 485px;float: left;display: block;}
-#content .top .mid .topcontent .subcontent .otheritem a{color: #444 ;text-decoration: none;font-weight: bold;font-size: 15px; border-top:2px solid black;
-padding: 10px;margin-top: 12px; width: 450px;}
-#content .top .mid .topcontent .subcontent .miditem{width: 140px;float: left; margin-right: 20px;}
-#content .top .mid .topcontent .subcontent .miditem img{height: 90px; float: left;}
-#content .top .mid .topcontent .subcontent .miditem a{font: bold 18px "Merriweather", Georgia, "Times New Roman", Times, serif;}
-#content .top .mid .botcontent {width: 485px; float: left;display: block;height: 880px; }
-#content .top .mid .botcontent .item {width: 485px; float: left;display: block;height: 425px;}
-#content .top .mid .botcontent .item h3{ color:#39547a; font: bold 18px "Merriweather", Georgia, "Times New Roman", Times, serif;
-margin-top: 20px; margin-left: 20px;}
-#content .top .mid .botcontent .item a{ display:block;color:#333; text-decoration: none;font-size: 24px;}
-#content .top .mid .botcontent .detail { float:left;width: 485px;height: 185px;background-color: #FFF!important;
-border: 1px solid #e3e3e3;border-width: 0 1px 1px;border-radius: 0 0 6px 6px;margin-bottom: 0;position: relative;line-height: 1;}
-#content .top .mid .botcontent .detail .miditem {width: 140px;float: left; margin-right: 20px;}
-#content .top .mid .botcontent .detail .miditem img{height: 90px; float: left; display: block;}
-#content .top .mid .botcontent .detail .miditem a{font: bold 14px "Merriweather", Georgia, "Times New Roman", Times, serif;color:#333;}
-#content .right { float: right;display: block; height: 2073px;width: 285px; background-color:black;}
-#content .right img{width:285px; }
-#content .right .video{ width: 285px;height: 450px;background-color: red;}
-#content .right .small{ width: 285px; height: 40px;}
-#content .right .video h3{color: rgb(0, 0, 0);
-font-family: helvetica, 'Open Sans Condensed', 'Open Sans', Arial, sans-serif;
-font-size: 24px;line-height: 30px;text-transform: none;text-align: center;}
+#content{ 
+  border-bottom: 0px solid #DEDEDE; 
+  padding: 13px 0 13px;
+}
+#content .top {
+  float: left;
+  display: block; 
+  height: 1623px;
+  width: 665px;
+}
+#content .top .left {
+  float: left;display: block; 
+  height: 1073px;
+  width: 150px;
+}
+#content .top .left .topcontent { 
+  float: left;
+  display:inline; 
+  height: 30px; 
+  width: 150px;
+  margin-top: 15px;
+}
+#content .top .left h3 { 
+  color: #39547A;font: bold 20px "Oxygen", "Trebuchet MS"; 
+  margin: auto;
+  text-transform: uppercase;
+}
+#content .top .left .midcontent {
+  float: left;
+  display: inline;
+  margin-top: 3px;
+}
+#content .top .left .midcontent h2{ 
+  color:#333;
+  font: bold 17px "Oxygen", "Trebuchet MS"; 
+  margin-top: 8px;
+}
+#content .top .left .midcontent a { 
+  color:#333;font: bold 17px "Oxygen", "Trebuchet MS"; 
+  margin-top: 8px;
+}
+#content .top .left .midcontent select { 
+  height: 28px;
+  line-height: 28px
+  ;border: 1px solid #dddddd;
+  background-color: #f9f9f9;
+  padding: 4px 6px;
+  margin-bottom: 11.326px;
+  font-size: 14px;
+}
+#content .top .left .midcontent a.con{ 
+  color: #39547A;
+  font: bold 20px "Oxygen", "Trebuchet MS";
+  margin: auto;
+  text-transform: uppercase;
+}
+#content .top .left .midcontent h2.con{
+  font: 20px "Oxygen", "Trebuchet MS";
+  margin: auto; 
+  font-size: 14px;
+}
+#content .top .left .midcontent a.detail{
+  color: #5278ae;
+  text-decoration: none;
+  font: normal 14px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a:hover{
+  text-decoration: underline;
+}
+#content .top .left span {
+  float:left;font-size: 12px;
+  color: #808080;
+  font: normal 10px / 16.989px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#content .top .mid{ 
+  float: left;
+  display: block;
+  height: 1073px;
+  width: 485px; 
+  margin-left: 20px;
+}
+#content .top .mid .topcontent{ 
+  display: block; 
+  float: left; 
+  height: 990px; 
+  width: 485px;
+  border-bottom: 4px solid gray;
+}
+#content .top .mid .topcontent .subcontent {
+  display: block; 
+  float: left; 
+  width: 485px;
+}
+#content .top .mid .topcontent .subcontent h1{
+  display: block; 
+  float: left;
+  color: #333;
+  font: bold 40px "Merriweather", Georgia, "Times New Roman", Times, serif;
+}
+#content .top .mid .topcontent .subcontent a{
+  display: block; 
+  float: left;
+  color: #333;font: 
+  bold 40px "Merriweather", Georgia, "Times New Roman", Times, serif;
+}
+#content .top .mid .topcontent .subcontent .img{
+  display: block; 
+  float: left; 
+  width:485px;
+}
+#content .top .mid .topcontent .subcontent span{
+  color: #666;
+  font: normal 13px / 16.989px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#content .top .mid .topcontent .subcontent .con{
+  float: left; 
+  display:block;
+  font: bold 16px,"Trebuchet MS", "Merriweather", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  color: #39547A;
+  margin-top: 20px;
+  width: 485px;
+}
+#content .top .mid .topcontent .subcontent .otheritem{
+  width: 485px;
+  float: left;
+  display: block;
+}
+#content .top .mid .topcontent .subcontent .otheritem a{
+  color: #444 ;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px; 
+  border-top:2px solid black;
+  padding: 10px;
+  margin-top: 12px; 
+  width: 450px;
+}
+#content .top .mid .topcontent .subcontent .miditem{
+  width: 140px;
+  float: left; 
+  margin-right: 20px;
+}
+#content .top .mid .topcontent .subcontent .miditem img{
+  height: 90px; 
+  float: left;
+}
+#content .top .mid .topcontent .subcontent .miditem a{
+  font: bold 18px "Merriweather", Georgia, "Times New Roman", Times, serif;
+}
+#content .top .mid .botcontent {
+  width: 485px; 
+  float: left;
+  display: block;
+  height: 880px; 
+}
+#content .top .mid .botcontent .item {
+  width: 485px;
+  float: left;
+  display: block;
+  height: 425px;
+}
+#content .top .mid .botcontent .item h3{ 
+  color:#39547a; 
+  font: bold 18px "Merriweather", Georgia, "Times New Roman", Times, serif;
+  margin-top: 20px; 
+  margin-left: 20px;
+}
+#content .top .mid .botcontent .item a{ 
+  display:block;
+  color:#333;
+  text-decoration: none;
+  font-size: 24px;
+}
+#content .top .mid .botcontent .detail { 
+  float:left;
+  width: 485px;
+  height: 185px;
+  background-color: #FFF!important;
+  border: 1px solid #e3e3e3;
+  border-width: 0 1px 1px;
+  border-radius: 0 0 6px 6px;
+  margin-bottom: 0;
+  position: relative;
+  line-height: 1;
+}
+#content .top .mid .botcontent .detail .miditem {
+  width: 140px;
+  float: left;
+  margin-right: 20px;
+ }
+#content .top .mid .botcontent .detail .miditem img{
+  height: 90px;
+  float: left;
+  display: block;
+}
+#content .top .mid .botcontent .detail .miditem a{
+  font: bold 14px "Merriweather", Georgia, "Times New Roman", Times, serif;
+  color:#333;
+}
+#content .right { 
+  float: right;
+  display: block;
+  height: 2073px;
+  width: 285px; 
+  background-color:black;
+}
+#content .right img{
+  width:285px; 
+}
+#content .right .video{ 
+  width: 285px;
+  height: 450px;
+}
+#content .right .small{
+ width: 285px; 
+ height: 40px;
+}
+#content .right .video h3{
+  color: rgb(0, 0, 0);
+  font-family: helvetica, 'Open Sans Condensed', 'Open Sans', Arial, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: none;
+  text-align: center;
+}
 #content .bot {float: left;display: block;height: 1814px;width: 660px;}
 #content .bot .new{height: 546px; width: 288px; float: left; display: block;}
 #content .bot .new .item {width: 288px;}
-#content .bot .new .item a{font: normal 14px Arial, Helvetica, sans-serif!important;
-border-top: 1px solid #E3E3E3;color: #333333; border-bottom: none;}
-#content .bot a{ font-size: 30px;color: #39547A; display: block; font-weight: bold; margin-top:5px; margin-bottom: 20px;
-border-top: 4px solid #dddddd;border-bottom: 1px solid #dddddd; padding-top: 10px; }
-#content .bot img{ width: 288px;display: block;}
-#content .bot .spec{color: #333;font: bold 23px "Merriweather", Georgia, "Times New Roman", Times, serif; border: none;display: block; }
-#content .bot span{font-size: 1.12em;color: #666;margin-bottom: 18px; margin-top: 18px; display: block;}
-#content .bot .fead{width: 307px; float: left; display: block;margin-left:50px;}
-#content .bot .fead .item {width: 311px;}
-#content .bot .fead .item a{font: normal 14px Arial, Helvetica, sans-serif!important;
-border-top: 1px solid #E3E3E3;color: #333333; border-bottom: none}
-#footer{ border-bottom: 0px solid #DEDEDE; padding: 13px 0 13px;}
-#footer .top h1{font-size: 40px;color: #39547a; display: block; font-weight: bold; margin-top:5px; margin-bottom: 20px;
-border-top: 4px solid #dddddd;border-bottom: 1px solid #dddddd;}
-#footer .top {width:950px;display: block;}
-#footer .top .topcontent{width:175px; margin-right: 20px; float: left;display: block;}
-#footer .top .topcontent a{font-size:13px;padding:15px;
-border-top: 1px solid #E3E3E3;color: #333333;display: block;font-family: "HelveticaNeue", Helvetica, sans-serif !important;}
-#footer .top .topcontent .spec{border:none;color: #333;font: bold 18px "Merriweather", Georgia, "Times New Roman", Times, serif !important;}
-#footer .top .topcontent .item{width:175px; display: block; }
-#footer .top .topcontent img{width: 175px;display: block;}
-#footer .top .topcontent h3{padding-left: 10px;padding-top: 0px;z-index: 2;font-family: 'Permanent Marker';
-font-size: 16px;text-align: center;line-height: 20px;}
+#content .bot .new .item a{
+  font: normal 14px Arial, Helvetica, sans-serif!important;
+  border-top: 1px solid #E3E3E3;
+  color: #333333; 
+  border-bottom: none;
+}
+#content .bot a{ 
+  font-size: 30px;
+  color: #39547A;
+  display: block;
+  font-weight: bold;
+  margin-top:5px; 
+  margin-bottom: 20px;
+  border-top: 4px solid #dddddd;
+  border-bottom: 1px solid #dddddd; 
+  padding-top: 10px; 
+}
+#content .bot img{
+ width: 288px;
+ display: block;
+}
+#content .bot .spec{
+  color: #333;
+  font: bold 23px "Merriweather", Georgia, "Times New Roman", Times, serif; 
+  border: none;
+  display: block; 
+}
+#content .bot span{
+  font-size: 1.12em;
+  color: #666;
+  margin-bottom: 18px;
+  margin-top: 18px;
+  display: block;
+}
+#content .bot .fead{
+  width: 307px; 
+  float: left; 
+  display: block;
+  margin-left:50px;
+}
+#content .bot .fead .item {
+  width: 311px;
+}
+#content .bot .fead .item a{
+  font: normal 14px Arial, Helvetica, sans-serif!important;
+  border-top: 1px solid #E3E3E3;
+  color: #333333; 
+  border-bottom: none
+}
+#footer{ 
+  border-bottom: 0px solid #DEDEDE; 
+  padding: 13px 0 13px;
+}
+#footer .top h1{
+  font-size: 40px;
+  color: #39547a; 
+  display: block;
+  font-weight: bold;
+  margin-top:5px; 
+  margin-bottom: 20px;
+  border-top: 4px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+#footer .top {
+  width:950px;
+  display: block;
+  height: 592px;
+}
+#footer .top .topcontent{
+  width:190px; 
+  margin-right: 25px;
+  float: left;
+  display: block;
+}
+#footer .top .topcontent a{
+  font-size:13px;
+  padding:15px;
+  border-top: 1px solid #E3E3E3;
+  color: #333333;display: block;
+  font-family: "HelveticaNeue", Helvetica, sans-serif !important;
+}
+#footer .top .topcontent .spec{
+  border:none;
+  color: #333;
+  font: bold 18px "Merriweather", Georgia, "Times New Roman", Times, serif !important;
+}
+#footer .top .topcontent .item{
+  width:190px;
+  display: block;
+  }
+#footer .top .topcontent img{
+  width: 190px;
+  display: block;
+}
+#footer .top .topcontent h3{
+  padding-left: 10px;
+  padding-top: 0px;z-index: 2;
+  font-family: 'Permanent Marker';
+  font-size: 16px;
+  text-align: center;
+  line-height: 20px;
+}
+#footer .top .rightcontent {
+  width:190px;
+  margin-right: 25px; 
+  float: left;
+  display: block;
+}
+#footer .bot{
+  width:950px;
+  display: block;
+  height: 370px;
+}
+#footer .bot .topcontent{
+  width:650px;
+  display: block; 
+  height: 120px;
+  margin-left: 145px; 
+  border:1px solid gray; 
+}
+#footer .bot .topcontent .travel{width: 422px;display: block; height:40px;color: #0000ff;
+  font-size: 29px;
+  line-height: 34px;
+  white-space: nowrap;
+  background-color: transparent;
+  font-family:"arial";
+}
+#footer .bot .topcontent img{
+  height: 17px;
+  width: 17px; 
+  display: block;
+  float: left;
+}
+#footer .bot .topcontent .right{
+  height: 120px;
+  width: 228px; 
+  display: block;
+  float: right;
+}
+#footer .bot .topcontent .right .button { 
+  background: #3f8c3f;
+  border-radius: 6px;
+  border-width: 0px;
+  cursor: pointer;
+  display: inline-block;
+  height: 64px;
+  min-width: 85px;
+  max-width: 341px;
+  margin: 0;
+  text-align: center;
+  visibility: visible;
+  white-space: nowrap;
+  margin-top: 27px; margin-left: 20px;
+}
+#footer .bot .topcontent .right .button .arow{ 
+  width: 23px; 
+  height: 37px;
+  margin-left: 32px;
+  margin-top: 15px;
+}
+#footer .bot .topcontent a{
+  color: #006600; 
+  font-size: 17px;
+  line-height: 24px;
+  width: 405px;
+  display: block; 
+  height:40px; 
+  float: left;
+}
+#footer .botcontent .topcontent h3{
+  color: #000000;
+  word-wrap: break-word;
+  font-size: 17px;
+  line-height: 20px;
+  font-family: "arial";
+  font-weight: 300;
+}
+#footer .bot .midcontent{
+  margin-top:25px;
+  width:950px;
+  display: block; 
+  height: 100px; 
+  border-top: 1px solid gray;
+}
+#footer .bot .midcontent .image {
+  height: 41px;
+  width: 950px;
+}
+#footer .bot .midcontent .image img {
+  margin-left: 351px; 
+  margin-top: 10px; 
+}
+#footer .bot .midcontent ul{
+  float: left;width: 170px;
+  height: 55px; 
+  margin-left: 380px; 
+}
+#footer .bot .midcontent ul li {
+  display: inline-block; 
+  height: 30px;
+  width: 30px;
+  margin-left: .5em;
+}
+#footer .bot .midcontent ul li .fb{
+  background: url('http://local.mercurynews.com/common/dfm/assets/img/webicons/fc-webicon-facebook-m.png');
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  margin-bottom: 5px;float: left;
+  text-decoration: none;
+}
+#footer .bot .midcontent ul li .twiter{
+  background: url('http://local.mercurynews.com/common/dfm/assets/img/webicons/fc-webicon-twitter-m.png');
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  margin-bottom: 5px;float: left;
+  text-decoration: none;
+}
+#footer .bot .midcontent ul li .gg{
+  background: url('http://local.mercurynews.com/common/dfm/assets/img/webicons/fc-webicon-googlePlus-m.png');
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  margin-bottom: 5px;float: left;
+  text-decoration: none;
+}
+#footer .bot .midcontent ul li .fc{
+  background: url('http://local.mercurynews.com/common/dfm/assets/img/webicons/fc-webicon-rss-m.png');
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  margin-bottom: 5px;float: left;
+  text-decoration: none;
+}
+#footer .bot .botcontent{
+  width:650px;
+  display: block; 
+  height: 140px;
+  margin-left: 145px; 
+  border-top: 1px solid gray;
+}
+#footer .bot .botcontent ul{
+ width: 650px; 
+ padding-top: 20px;
+}
+#footer .bot .botcontent ul .spec{
+  display: inline;
+  color: black;
+}
+#footer .bot .botcontent ul li{ 
+  display: inline; 
+  font-size: 13px; 
+  margin-left: 13px;
+}
+#footer .bot .botcontent ul li a{
+  display: inline;
+  color: #5278ae;
+}
