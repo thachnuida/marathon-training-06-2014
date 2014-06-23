@@ -6,6 +6,8 @@
 
 }
 body{
+	padding-top: 10px;
+	padding-bottom: 10px;
 	width: 76%;
 	margin: 0 auto;
 	font-family: "nyt-franklin",arial,helvetica,sans-serif;
@@ -94,7 +96,6 @@ body{
 }
 #container .left-content{
 	float: left;
-
 	width: 63%;
 	border-right: 1px solid #999;
 }
@@ -128,15 +129,61 @@ body{
 	padding-right: 10px;
 	padding-left: 5px;
 }
+
 #container .general{
-	background: transparent url(doubleRule.gif) repeat-x left top;
+	background-image: url(doubleRule.gif), url(doubleRule.gif);
+	background-position: left top, left bottom;
+	background-repeat: repeat-x, repeat-x;
 	width:100%;
 	clear: both;
 	padding-top:10px;
+	padding-bottom: 10px;
+	position: relative;
+	overflow: hidden;
+}
+#container .general .navigation{
+	position: absolute;
+	right: 5px;
+	top: 20px;
 }
 #container .general .story{
 	float: left;
 	width: 16%;
+}
+#container .left-content.second .article{
+	overflow: hidden;
+	background: url(hpWellRulers-reskin.gif) no-repeat 188px 0px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	margin-bottom: 10px;
+	border-bottom: 0px !important;
+	border-top: 1px solid  #e2e2e2;
+}
+#container .left-content.second .article:first-child{
+	border-top:0px !important;
+}
+
+#container .left-content.second .story{
+	width: 30%;
+	overflow: visible;
+	display: inline;
+	float: left;
+	}
+#container .left-content.second .story h4{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#container .left-content.second .story:first-child{
+	padding-right:4px;
+	margin-right: 11px;
+}
+#container .left-content.second .story:last-child{
+	padding-left:5px;
+	margin-left: 5px;
+	}
+#container .left-content.second .story > img{
+	width: 25%;
+	float: right;
 }
 #container .general .story .first-story{
 	margin-bottom: 10px;
@@ -173,7 +220,7 @@ display: inline;
 	padding-bottom: 10px;
 	padding-top: 10px;
 	}
-#container .left-content .redline{
+#container .left-content .redline, #container .right-content .redline{
 	color: #a81817;
 	font-size: 10px;
 	font-weight: normal !important;
@@ -200,7 +247,6 @@ display: inline;
 }
 
 #container .right-content{
-	padding-right: 10px;
 	float: right;
 	width: 35%;
 }
@@ -247,7 +293,7 @@ display: inline;
 	padding-left: 10px;
 	width:44%;
 }
-#container .right-content .article .title{
+#container .right-content .title{
 	text-align: center;
 	font-weight: bold;
 }
@@ -347,8 +393,153 @@ display: inline;
 	color: #3c8a37;
 	font-weight: 600;
 }
-#container .right-content .article .sub-menu li
+#container .right-content .sub-menu{
+	background: transparent url(doubleRule.gif) repeat-x left top;
+	margin-top: 10px;
+	padding-top: 15px
+}
+#container .right-content .sub-menu li
 {
 	display: inline;
 	padding-right: 10px;
+}
+#container .right-content .listnews a{
+	font-size: 15px;
+
+}
+#container .right-content .listnews li{
+padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#container .right-content .email-chart td{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e2e2e2;
+	font-size: 17px;
+	line-height: 17px;
+	font-weight: 600;
+	font-family: "nyt-cheltenham-hinted",georgia,"times new roman",times,serif;
+
+}
+#container .right-content.second .article2{
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e2e2e2;
+	margin-top: 20px;
+}
+#container .right-content.second .article2:first-child{
+	border-bottom: 0px solid #e2e2e2;
+}
+#container .right-content.second .story{
+	margin-top: 10px;
+	padding-bottom: 20px;
+}
+#container .right-content.second .picpara{
+	color: #777;
+	margin-top: 3px;
+	font-size: 12px;
+}
+#container .right-content.second .picpara .bold{
+	font-weight: 700;
+}
+#container .right-content.second .picpara li{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 3px;
+}
+#container .right-content .borderpic{
+	border: 1px solid #e2e2e2;
+	padding: 10px;
+}
+#container .right-content .borderpic .title{
+	margin-top: 8px;
+	margin-bottom: 10px;
+}
+#container .right-content .parallelpic{
+	padding: 5px 23px;
+}
+#container .right-content .advert > div{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#container .right-content .advert div{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#container .right-content .advert div a:nth-of-type(1){
+	font-size: 12px;
+	color: #000066;
+	font-weight: bold;
+	text-decoration: underline;}
+	#container .right-content .advert div a:nth-of-type(2){
+	font-size: 11px;
+color: #000066;
+font-weight: normal;
+text-decoration: none;}
+#container .left-content.second{
+	border-right: 0px solid #000;
+}
+#container .right-content.second{
+	border-left: 1px solid #e2e2e2;
+	padding-left: 10px;
+}
+#footer{
+	clear: both;
+	padding-top: 15px;
+	background: transparent url(doubleRule.gif) repeat-x left top;
+	
+}
+
+#footer #left-footer{
+	width: 81%;
+	float: left;
+	overflow: hidden;
+	border-right: 1px solid #e2e2e2;
+	margin-right: 30px;
+	padding-right: 0px !important;
+}
+
+#footer #left-footer th{
+	text-align: left;
+
+}
+#footer #left-footer th, #footer #left-footer td{
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: 700;
+}
+#footer #left-footer th, #footer #left-footer td:last-child{
+	padding-right: 5px!important;
+}
+#footer #right-footer .footer-first-list{
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 7px;
+	margin-top: 5px;
+}
+#footer #right-footer .footer-mid-list{
+	font-weight: 500;
+	font-size: 11px;
+	line-height: 15px;
+	margin-bottom: 8px;
+	margin-top: 10px;
+}
+#footer #bottom-footer{
+	clear: both;
+	text-align: center;
+	padding-top: 10px;
+	border-top: 1px solid #e2e2e2;
+}
+#footer #bottom-footer li{
+	display: inline;
+	color: #666;
+	font-size: 10px;
+	border-left: 1px solid #cbcbcb;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#footer #bottom-footer li:nth-of-type(1){
+	border-left: 0px solid #cbcbcd;
 }
