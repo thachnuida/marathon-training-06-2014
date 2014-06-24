@@ -5,3 +5,4 @@ def char_freq(str):
 			dic[str[index]] = str.count(str[index])
 	print "Dictionary for string : \n",dic
 char_freq("abbabcbdbabdbdbabababcbcbab")
+
