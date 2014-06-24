@@ -7,7 +7,7 @@
 body{
 	padding-top: 10px;
 	padding-bottom: 10px;
-	width: 76%;
+	width: 1000px;
 	margin: 0 auto;
 	font-family: "nyt-franklin",arial,helvetica,sans-serif;
 	font-size: 13px;
@@ -141,7 +141,7 @@ body{
 }
 #container .left-content.second .article{
 	overflow: hidden;
-	background: url(hpWellRulers-reskin.gif) no-repeat 188px 0px;
+	background: url(hpWellRulers-reskin.gif) no-repeat 47% 0px;
 	padding-bottom: 10px;
 	padding-top: 10px;
 	margin-bottom: 10px;
@@ -337,12 +337,15 @@ body{
 	width: 40% !important;
 }
 
-#container .chart{
-	margin-left: -7px;
+.chart{
+	margin-left: 4px;
 }
-#container .chart tr td{
+.chart tr td{
 	text-align: right;
 	border-left: 1px solid #000;
+}
+.chart tr td:first-child{
+	border-left: 0px solid #000 !important;
 }
 
 #container .chart tr:first-child td{
