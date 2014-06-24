@@ -1,28 +1,38 @@
 *{
-	font-family: "Tomato";
+	font-family: "Arial";
 	font-size: 13px;
 }
 a{
-display: inline-block;
 margin-left:10px;
 padding-top: 4px;
 padding-bottom: 4px;
+padding-left: 6px;
+padding-right: 6px;
 text-align: center;
 background-image: url(left.gif), url(right.gif), url(mid.gif);
 background-repeat: no-repeat, no-repeat, repeat-x;
 background-position: left top, right top, left top ; 
 text-decoration: none;
 color: black;
+border-bottom: 1px solid gray;
+
 }
-a:hover {color:#cc6600; cursor: pointer;}
+a:hover {
+	color:#cc6600;
+	cursor: pointer;
+	}
 
 a:active{
-	color: black;
+	color: #000;
 	font-weight: bold;
 	background-image: url(left-selected.gif), url(right-selected.gif), url(mid-selected.gif);
 	background-repeat: no-repeat, no-repeat, repeat-x;
 	background-position: left top, right top, left top; 
+	border-bottom: 1px solid #FFF;
 }
-body{
-	border-bottom: black solid 1px;
+.border {
+	border-bottom: 1px solid gray;
+	width: 98%;
+	margin-top: 3px;
+	margin-left: 5px;
 }

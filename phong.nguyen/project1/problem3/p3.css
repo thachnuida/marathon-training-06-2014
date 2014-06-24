@@ -146,7 +146,7 @@ text-decoration: none;
 .qcl img{
   width: 155px;
   height: 800px;
-  position: absolute;
+  position: fixed;
   top: 317px;
   left: 0px;
   float: left;
@@ -154,7 +154,7 @@ text-decoration: none;
 .qcr img{
   width: 155px;
   height: 800px;
-  position: absolute;
+  position: fixed;
   top: 317px;
   left:1130px;
   float: right;
