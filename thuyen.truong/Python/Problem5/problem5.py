@@ -1,4 +1,5 @@
 def check_balanced(str):
+	if (str.count("[") != str.count("]")) : return False
 	num=0
 	for index in range(len(str)):
 		if str[index] == '[':
