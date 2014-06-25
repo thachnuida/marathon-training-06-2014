@@ -67,7 +67,7 @@ text-decoration: none;
 }
 .menu {
   height: 47px; 
-  width: 1286px; 
+  width: 1276px; 
   background-color: red; 
   min-height: 30px;
   background-color: #3e5b84 !important;
@@ -98,7 +98,7 @@ text-decoration: none;
 }
 .sub {
   height: 47px; 
-  width: 1286px; 
+  width: 1276px; 
   display: block;
   float: left;
    border-bottom: 2px solid gray;

@@ -8,5 +8,10 @@ def third_person(str):
 			str2=str+'es'
 	elif last=='y':
 		str2=str[:len(str)-1]+'ies'
+	else :
+		str2=str+'s'
 	print str2
-third_person("ruooy")
+third_person("run")
+third_person("try")
+third_person("watch")
+third_person("close")
