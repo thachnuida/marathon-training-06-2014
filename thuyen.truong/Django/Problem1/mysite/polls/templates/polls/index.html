@@ -2,6 +2,11 @@
 {% load url from future %}
 
 <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+<form action="{% url 'polls:search' %}" method="post">
+{% csrf_token %}
+	<input type="text" name="input"/>
+	<input type="submit" value="search"/>
+</form>
 
 {% if latest_poll_list %}
     <ul>

@@ -33,9 +33,15 @@ from django.utils import timezone
 #     poll = get_object_or_404(Poll, pk=poll_id)
 #     return render(request, 'polls/results.html', {'poll': poll})
 
+def search(request):
+    latest_poll_list = Poll.objects.filter(question__icontains=request.POST['input']).filter(pub_date__lte=timezone.now()).order_by('-pub_date')[:5]
+    context = {'latest_poll_list': latest_poll_list}
+    return render(request, 'polls/index.html', context)
+    
 class IndexView(generic.ListView):
     template_name = 'polls/index.html'
     context_object_name = 'latest_poll_list'
+    model=Poll
     # method 1
     # def get_queryset(self):
     #     """Return the last five published polls."""
