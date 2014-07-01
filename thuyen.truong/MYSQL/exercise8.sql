@@ -1,0 +1,1 @@
+DELETE FROM Movie WHERE mID = 109 OR mID = 110;

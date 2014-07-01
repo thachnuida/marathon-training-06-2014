@@ -1,0 +1,1 @@
+select mID from Rating where stars = 4 OR stars = 5 ORDER BY ratingDate ASC;
