@@ -1,0 +1,1 @@
+UPDATE Rating SET ratingDate='0000-00-00' WHERE ratingDate IS NULL;

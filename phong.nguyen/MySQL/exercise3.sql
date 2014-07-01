@@ -1,0 +1,1 @@
+SELECT rID FROM Rating WHERE ratingDate is NULL;

@@ -1,0 +1,36 @@
+li a {
+    color: green;
+    font-size: 35px;
+    text-decoration: none;
+    margin-left: 10px;
+
+}
+body {
+    background:url("http://www.highdefinitionwallpapers1080p.com/wp-content/uploads/2014/06/fifa-world-cup-2014-wallpaper-hd.jpg")
+    bottom right;
+}
+.ul {
+    display: block;
+    margin-top: 320px;
+    list-style: none;
+}
+ul li{
+    border: 2px solid white;
+    margin-top: 5px;
+    color: white;
+    font-size: 32px;
+}
+h1{
+    color: white;
+    margin-top: 330px;
+    margin-left: 200px;
+}
+form{
+    margin-left: 198px;
+    font-size: 23px;
+    color: white;
+}
+ul{
+    display: block;
+    list-style: none;
+}

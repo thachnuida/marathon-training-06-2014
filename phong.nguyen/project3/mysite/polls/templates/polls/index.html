@@ -1,5 +1,7 @@
+{% load staticfiles%}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css'%}"/>
 {% if latest_poll_list %}
-	<ul>
+	<ul class="ul">
     {% for poll in latest_poll_list %}
     <li><a href="{% url 'polls:detail' poll.id %}">{{ poll.question }}</a></li>
     {% endfor %}
@@ -7,3 +9,9 @@
 {% else %}
     <p>No polls are available.</p>
 {% endif %}
+<h3>Search</h3>
+{% csrf_token %}
+<form action="polls/search/" method="get">
+    <input type="text" name="q">
+    <input type="submit" value="Search">
+</form>

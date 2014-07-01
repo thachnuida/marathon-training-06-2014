@@ -1,0 +1,1 @@
+SELECT Movie.title, Rating.stars FROM Movie LEFT JOIN Rating ON Movie.mID=Rating.mID WHERE stars IS NULL;
