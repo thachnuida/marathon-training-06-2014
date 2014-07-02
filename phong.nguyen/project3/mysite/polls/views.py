@@ -38,8 +38,7 @@ def vote(request, poll_id):
         # with POST data. This prevents data from being posted twice if a
         # user hits the Back button.
         return HttpResponseRedirect(reverse('polls:results', args=(p.id,)))
-def search_form(request):
-    q = request.GET.get("q")
-    latest_poll_list = Poll.objects.filter(question__startswith=q)
-    context = {'latest_poll_list': latest_poll_list}
-    return render(request, 'polls/index.html', context)
+def search(request):
+    q = request.GET.get('q')
+    latest_poll_list = Poll.objects.filter(question__contains=q)
+    return render(request, 'polls/index.html', {'latest_poll_list': latest_poll_list})
