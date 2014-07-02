@@ -1,0 +1,129 @@
+body {
+    background: #99FFFF url("images/Actions-user-group.png") no-repeat 95% 90%;
+}
+
+#index h1.title, #detail h1.title, #results h1.title{
+	color: red;
+    text-align: center;
+    border-bottom: 5px ridge #2c2c2c;
+    margin: 10px 50px;
+    padding-bottom: 20px;
+    font-family: georgia,"times new roman",times,serif;
+}
+
+#index ul.poll_list{
+    position: relative;
+    list-style-image:url('images/Actions-bookmarks-organize-icon.png');
+    margin-left: 100px;
+    }
+
+#index ul.poll_list span.poll_date{
+    font-size: 13px;
+}
+
+#index .search_form{
+    position: absolute;
+    right: 100px;
+    top: 10px;
+}
+
+#index .search_form input[type="submit"], #detail .poll-form input[type="submit"]{
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #443333;
+    padding: 5px 12px 5px 12px;
+    border: 1px solid #999;
+ 
+    text-shadow: 0px 1px 1px #666;
+    text-decoration: none;
+ 
+    -moz-box-shadow: 0 1px 3px #111;
+    -webkit-box-shadow: 0 1px 3px #111;
+    box-shadow: 0 1px 3px #111;
+ 
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+
+    background: #64a724;
+    cursor: pointer;
+}
+#index .search_form input[type="submit"]:hover, #detail .poll-form input[type="submit"]:hover{
+    color: #fff;
+}
+
+#index li a.poll_link {
+    color: green;
+}
+#index li a.poll_link:hover{
+    color: red;
+    text-decoration: none;
+}
+
+#index .nopoll{
+    color: #CC3366;
+    font-size: 20px;
+}
+
+
+
+#detail div.vote{
+    margin-left: 388px;
+    display: inline-block;
+    padding: 10px;
+    border: 2px double #990033;
+    margin-top: 50px;
+    height: 260px;
+    position: relative;
+}
+
+#detail h1.poll, #results h1.poll{
+    width: 500px;
+    color: #0000FF;
+    text-align: center;
+
+}
+
+#detail .poll-form input[type="submit"]{
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+}
+
+#detail .choice{
+    color: green;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "nyt-franklin",arial,helvetica,sans-serif
+}
+
+#detail img.img{
+    width: 22px;
+    height: 22px;
+   }
+
+#results .process{
+    height: 15px;
+    width: 0px;
+    background: red;
+    border: 1px solid #cccccc;
+}
+
+#results .result{
+    margin-bottom: 60px;
+    margin-left: 40px;
+}
+
+#results .vote_again{
+    margin-left: 50px;
+    margin-top: 350px;
+    font-size: 22px;
+}
+
+#results .result li{
+    color: #990033;
+    font-size: 18px;
+    margin-top: 15px;
+}
+

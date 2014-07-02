@@ -1,0 +1,28 @@
+{% load staticfiles %}
+{% load url from future %}
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+</head>
+<body>
+    <div id = "index">
+        <h1 class = "title">LIST OF POLLS RECENTLY</h1>
+        <ul class="poll_list">
+            <form action="{% url 'polls:search' %}" method="post" class="search_form">
+               {% csrf_token %}
+	           <input type="text" name="input"/>
+	           <input type="submit" value="search"/>
+            </form>
+            {% if latest_poll_list %}
+                {% for poll in latest_poll_list %}
+                    <li class="poll_link">
+                        <a href="{% url 'polls:detail' poll.id %}" >{{ poll.question }}</a>
+                    <br/>
+                    <span class="poll_date">{{ poll.pub_date }}</span>
+                    </li>
+                {% endfor %}
+            {% else %}
+                <p class="nopoll">No polls are available.</p>
+            {% endif %}
+        </ul>
+    </div>
+</body>

@@ -1,0 +1,40 @@
+{% load url from future %}
+{% load staticfiles %}
+
+<!-- 
+method 1:
+<h1>{{ poll.question }}</h1>
+<ul>
+{% for choice in poll.choice_set.all %}
+    <li>{{ choice.choice_text }}</li>
+{% endfor %}
+</ul> -->
+<head>
+	<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+	<script src="{% static 'polls/jquery2-1-1.js' %}"></script>
+	<script language="javascript">var STATIC_URL = "{{ STATIC_URL }}";</script>
+	<script src="{{ STATIC_URL }}polls/script.js"></script>
+</head>
+<body>
+	<div id = "detail">
+		<h1 class="title">CHOOSES IN POLL</h1>
+		<div class="vote">
+			<h1 class="poll">{{ poll.question }}</h1>
+			{% if error_message %}<p style="color: red;"><strong>{{ error_message }}</strong></p>{% endif %}
+			<form action="{% url 'polls:vote' poll.id %}" method="post" class="poll-form">
+				{% csrf_token %}
+				{% for choice in poll.choice_set.all %}
+				<div class="lc">
+    				<input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
+    				<label class="choice" for="choice{{ forloop.counter }}">
+    					<img class="img" src="{% static 'polls/images/Hand-icon.png' %}"></img>
+    					{{ choice.choice_text }}
+    				</label>
+    			</div>
+				{% endfor %}
+				<input type="submit" value="Vote" />
+			</form>
+		</div>
+	</div>
+</body>
+
