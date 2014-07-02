@@ -69,7 +69,7 @@ body {
 
 
 #detail div.vote{
-    margin-left: 388px;
+    margin-left: 208px;
     display: inline-block;
     padding: 10px;
     border: 2px double #990033;
@@ -102,6 +102,10 @@ body {
     width: 22px;
     height: 22px;
    }
+#detail .back_list{
+    margin-left: 40px;
+    font-size: 22px;
+}
 
 #results .process{
     height: 15px;

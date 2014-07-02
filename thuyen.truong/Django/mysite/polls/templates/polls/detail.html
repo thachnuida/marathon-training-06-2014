@@ -18,6 +18,7 @@ method 1:
 <body>
 	<div id = "detail">
 		<h1 class="title">CHOOSES IN POLL</h1>
+		<a href="{% url 'polls:index' %}" class="back_list"><img src="{% static 'polls/images/refresh-icon.png' %}" ></img>Polls List</a>
 		<div class="vote">
 			<h1 class="poll">{{ poll.question }}</h1>
 			{% if error_message %}<p style="color: red;"><strong>{{ error_message }}</strong></p>{% endif %}
@@ -35,6 +36,8 @@ method 1:
 				<input type="submit" value="Vote" />
 			</form>
 		</div>
+
+
 	</div>
 </body>
 
