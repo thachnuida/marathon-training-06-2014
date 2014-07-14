@@ -1,0 +1,47 @@
+.calendar td,th{
+	padding-left: 5px;
+	padding-right:5px;
+	text-align: center;
+	background-color: #99FFFF;
+	margin-top: 10px;
+}
+#div1 {
+	position: relative;
+	top: 150px;
+	left: 380px;
+}
+#div1 .calendar, #div2 .calendar{
+	position: absolute;
+	top: 30px;
+}
+#div1 .title,#div2 .title  {
+	top: 2px;
+	font-family: "nyt-franklin",arial,helvetica,sans-serif;
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+}
+#div1 .title .namemonth, #div2 .title .namemonth{
+	position: absolute;
+	left: 70px;
+}
+.calendar .notmonth{
+	color: gray;
+}
+.title .premonth{
+	top: 2px;
+	left: 23px;
+	position: absolute;
+	cursor: pointer;
+}
+.title .nextmonth{
+	top: 2px;
+	left: 190px;
+	position: absolute;
+	cursor: pointer;
+}
+#div2{
+	position: relative;
+	top: 150px;
+	left: 700px;
+}
