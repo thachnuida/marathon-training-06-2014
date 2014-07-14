@@ -14,7 +14,7 @@
 	    var CurrentYear = date.getFullYear();
 
 	    
-	    var daysinmonth = (new Date(CurrentYear, CurrentMonth - 1, 0)).getDate();
+	    var daysinmonth = (new Date(CurrentYear, CurrentMonth, 0)).getDate();
 	    
 	    var firstMonth = new Date(CurrentYear, CurrentMonth -1);
 	    var firstday = firstMonth.getDay();
@@ -83,5 +83,5 @@
 	    var calendar1 = new Calendar("div1");
 	    calendar1.render(new Date("July 12, 2014"));
 	    var calendar2 = new Calendar("div2");
-	    calendar2.render(new Date("January 4, 1996"));
+	    calendar2.render(new Date("January 4, 2009"));
 	}
